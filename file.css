@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    /*display:block;*/
+}
+
+.midlle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn-1 {
+    background: rgba(83, 82, 82, 0.897);
+    color: #fff;
+    width: 100px;
+    padding: 14px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "montserrat";
+    transition: all .25s ease;
+}
+
+.btn-1::after {
+    content: '';
+    position: absolute;
+    opacity: .3;
+    padding: 14px 30px;
+    background: #000;
+    border-radius: inherit;
+    width: 50%;
+    background:  rgba(0, 0, 0, 0.356);
+    height: 100%;
+    left: 0px;
+    bottom: -14px;
+    z-index: -1;
+    transition: all .25s ease;
+}
+
+.btn-1::before {
+    content: '';
+    position: absolute;
+    opacity: .3;
+    padding: 14px 30px;
+    background: #000;
+    border-radius: inherit;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.356);
+    height: 100%;
+    left: 0px;
+    bottom: -14px;
+    z-index: -1;
+    transition: all .25s ease;
+}
+
+.btn-1:hover { transform: translate(-12px,-12px);}
+.btn-1:hover:after {transform: translate(3px,3px);}
+.btn-1:hover:before {transform: translate(6px,6px);}
